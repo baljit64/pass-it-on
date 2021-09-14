@@ -1,0 +1,99 @@
+.sell-fixed-circle {
+  position: fixed;
+  bottom: 5%;
+  right: 50px;
+  background: #1537599d;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  font-size: 3.4rem;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+
+}
+
+/*  */
+.sell-fixed-circle:hover {
+
+  background: #152759;
+
+  box-shadow: rgb(206, 200, 200) 0px .2rem .7rem;
+}
+
+.add-items-circle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+
+
+}
+
+.add-items-circle ul {
+  display: none;
+  list-style: none;
+  position: absolute;
+  bottom: 80px;
+  right: 40px;
+  transition: 0.2s;
+}
+
+.add-items-circle ul li {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 5px;
+  background: #fff;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #152759;
+  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.671);
+}
+
+.add-items-circle ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.add-items-circle ul li a:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.815);
+}
+
+.add-items-circle ul li:nth-child(4) {
+  transition-delay: 0.5s;
+}
+
+.add-items-circle h3 {
+  color: rgb(36, 34, 34);
+  font-size: 17px;
+  background: #ddd;
+  border-radius: 5px;
+  padding: 5px 10px;
+  position: absolute;
+  right: 115%;
+  /* bottom: 50%; */
+  transform: translateY(-22px);
+  transition: ease-in-out 0.3s;
+  transition-delay: .5s;
+  box-shadow: 1px 2px 3px #455f799a;
+  /* animation: fadein 0.3s linear; */
+  display: none;
+}
+
+.add-items-circle li:hover h3 {
+  display: block;
+}
+
+@media only screen and (max-width:575px) {
+  .add-items-circle h3 {
+    display: block;
+  }
+}

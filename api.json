@@ -1,0 +1,568 @@
+{
+  "info": {
+    "_postman_id": "4053c962-0ffb-4efd-8ff9-a5cd657b61f8",
+    "name": "Pass_it_on",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "LOGIN",
+      "id": "ac73b8c5-e4ac-4ce8-8ee9-fe08904624a8",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\":\"gaurav12@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://pass-it-on123.herokuapp.com/login",
+        "description": "login from Pay_it_on"
+      },
+      "response": []
+    },
+    {
+      "name": "REGISTER",
+      "id": "b86a7c63-2db8-4d3f-afa7-f31766ebcfac",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\":\"Gaurav\",\r\n    \"email\":\"gaurav19@gmail.com\",\r\n    \"college\":\"CU\",\r\n    \"yop\":2021,\r\n    \"roll_number\":1709890,\r\n    \"city\":\"Chandigarh\",\r\n    \"password\":\"123456\",\r\n    \"confirm_password\":\"123456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://pass-it-on123.herokuapp.com/register",
+        "description": "register in pay_it_on"
+      },
+      "response": []
+    },
+    {
+      "name": "FORGET PASSWORD",
+      "id": "4636e746-d5ad-48b2-b0fe-381ed880f6af",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"jack12@gmail.com\",\r\n    \"New_password\":\"123456\",\r\n    \"verify_new_password\":\"123456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://pass-it-on123.herokuapp.com/forget",
+        "description": "forget in pay_it_on"
+      },
+      "response": []
+    },
+    {
+      "name": "DETAILS (FOR ADDING DATA)",
+      "id": "e70dfb46-8756-4e00-bf08-e0bc441c81ad",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGJlZmNjZWU1MmM5MzAwMTU1ODRmZTAiLCJuYW1lIjoiZ2F1cmF2IiwiZW1haWwiOiJnYXVyYXYxMkBnbWFpbC5jb20iLCJpYXQiOjE2MjM2NjI3NTN9.pzQoeOeZgW8JCSul-lgj-srE_pigwkFSuWzuxuorMCk",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "image1",
+              "type": "file",
+              "src": []
+            },
+            {
+              "key": "title",
+              "value": "Eng.... 1",
+              "type": "text"
+            },
+            {
+              "key": "author",
+              "value": "Rs salaria",
+              "type": "text"
+            },
+            {
+              "key": "edition",
+              "value": "3",
+              "type": "text"
+            },
+            {
+              "key": "university",
+              "value": "PTU",
+              "type": "text"
+            },
+            {
+              "key": "description",
+              "value": "OJOOW",
+              "type": "text"
+            },
+            {
+              "key": "quantity",
+              "value": "1",
+              "type": "text"
+            },
+            {
+              "key": "price",
+              "value": "200",
+              "type": "text"
+            },
+            {
+              "key": "cat_id",
+              "value": "6093d12d6888b600152f2106",
+              "type": "text"
+            },
+            {
+              "key": "sub_cat_id",
+              "value": "60b319140ce8e90015a75cb4",
+              "type": "text"
+            },
+            {
+              "key": "no_of_slides",
+              "value": "25",
+              "type": "text",
+              "disabled": true
+            }
+          ]
+        },
+        "url": "https://pass-it-on123.herokuapp.com/details"
+      },
+      "response": []
+    },
+    {
+      "name": "GET-COLLEGE NAME",
+      "id": "8452ead0-63b1-4535-a18c-a5f1e1bd3ecd",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDg3YWZlOTE5NjMwMjI0YzAxZGNlMTYiLCJuYW1lIjoiY2FwdGFpbl9KYWNrIiwiZW1haWwiOiJqYWNrMTJAZ21haWwuY29tIiwiaWF0IjoxNjIwMjgyMjc0fQ.SAq3F7wFy8k03V5iG0IUg_2PHvMY4XMOs4f2OrVTbtk",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "url": "https://pass-it-on123.herokuapp.com/get_colleges",
+        "description": "get_colleges"
+      },
+      "response": []
+    },
+    {
+      "name": "CHANGE PASSWORD",
+      "id": "1d93a229-40e7-4d6f-9b38-4254f53c7d6e",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDg3YWZlOTE5NjMwMjI0YzAxZGNlMTYiLCJuYW1lIjoiY2FwdGFpbl9KYWNrIiwiZW1haWwiOiJqYWNrMTJAZ21haWwuY29tIiwiaWF0IjoxNjIwNjMwNzc0fQ.nYtRFNDtkdMxjB75mwB91YXjuUnhweVShGr_9YkH1D8",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"old_password\":\"963852\",\r\n    \"New_password\":\"99887766\",\r\n    \"confirm_password\":\"99887766\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://pass-it-on123.herokuapp.com/change_password",
+        "description": "Password updation"
+      },
+      "response": []
+    },
+    {
+      "name": "EDIT PROFILE DATA",
+      "id": "5599ad38-21e9-4e7f-b53d-a5ec4085976c",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGJlZmNjZWU1MmM5MzAwMTU1ODRmZTAiLCJuYW1lIjoiR2F1cmF2IiwiZW1haWwiOiJnYXVyYXYxMkBnbWFpbC5jb20iLCJpYXQiOjE2MjM0MTA0Mjd9.isv7BX1_MPiiyPRU7WW1-x2oL0OWUwBRV3s6HT5RRRc",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\":\"gaurav\",\r\n    \"email\":\"gaurav12@gmail.com\",\r\n    \"college\":\"CU\",\r\n    \"yop\":2022,\r\n    \"roll_number\":987654,\r\n    \"city\":\"hoshiarpur\" \r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://pass-it-on123.herokuapp.com/Edit_profile",
+        "description": "profile editing in Pass_it_on"
+      },
+      "response": []
+    },
+    {
+      "name": "SET PROFILE PHOTO",
+      "id": "75bc8c89-a419-4391-a6f0-5aec8782d364",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGJlZmNjZWU1MmM5MzAwMTU1ODRmZTAiLCJuYW1lIjoiZ2F1cmF2IiwiZW1haWwiOiJnYXVyYXYxMkBnbWFpbC5jb20iLCJpYXQiOjE2MjM2NjI3NTN9.pzQoeOeZgW8JCSul-lgj-srE_pigwkFSuWzuxuorMCk",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "image1",
+              "type": "file",
+              "src": "/C:/Users/Gaurav/Downloads/p2.png"
+            }
+          ]
+        },
+        "url": "https://pass-it-on123.herokuapp.com/set_Image",
+        "description": "update in Pass_it_on"
+      },
+      "response": []
+    },
+    {
+      "name": "GET-PROFILE DATA",
+      "id": "2854b799-e915-4470-bad2-ff9b7396471b",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDg3YWZlOTE5NjMwMjI0YzAxZGNlMTYiLCJuYW1lIjoiY2FwdGFpbl9KYWNrIiwiZW1haWwiOiJqYWNrMTJAZ21haWwuY29tIiwiaWF0IjoxNjIyODA1Mjg2fQ.NkWPFtnIJJsGeBLqc2sJqkXBmkwvMMyNfbJ_YtHa2DI",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": "https://pass-it-on123.herokuapp.com/get_profile",
+        "description": "get profile data"
+      },
+      "response": []
+    },
+    {
+      "name": "GET-ALL_BOOKS-DETAIL",
+      "id": "7e6a2412-820c-4a4f-8f3d-917574c3d3d8",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGJlZmNjZWU1MmM5MzAwMTU1ODRmZTAiLCJuYW1lIjoiR2F1cmF2IiwiZW1haWwiOiJnYXVyYXYxMkBnbWFpbC5jb20iLCJpYXQiOjE2MjMyMzQwNDR9.OAiCaj8bMs12NGe4UhQArLnvjz58aaOnyl31wLhsBuQ",
+            "type": "text"
+          }
+        ],
+        "url": "https://pass-it-on123.herokuapp.com/get_detail/60825ea4ec516335b430d315/60b319140ce8e90015a75cb4",
+        "description": "get_detail"
+      },
+      "response": []
+    },
+    {
+      "name": "OPEN BOOK",
+      "id": "13ebd0a8-e1dc-4239-a26e-f70de8d87681",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDg3OTZjNTY5N2EwNzI5OTQ0NzIwMGUiLCJuYW1lIjoiZ2F1cmF2IiwiZW1haWwiOiJncjA3NTExQGdtYWlsLmNvbSIsImlhdCI6MTYyMjg5MTcyMX0.URhPygPX-dRO_yrpjW42QCOJyd3X4pRKbIXLgupfdkk",
+            "type": "text"
+          }
+        ],
+        "url": "https://pass-it-on123.herokuapp.com/get-detail1/60c050cea67b3119c818e2cb",
+        "description": "get book detail"
+      },
+      "response": []
+    },
+    {
+      "name": "SET-FAVORITE",
+      "id": "6f3e6f52-9f6a-49c2-8c00-f27f8468785e",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDg3YWZlOTE5NjMwMjI0YzAxZGNlMTYiLCJuYW1lIjoiY2FwdGFpbl9KYWNrIiwiZW1haWwiOiJqYWNrMTJAZ21haWwuY29tIiwiY29sbGVnZSI6IkxQVSIsInJvbGxfbnVtYmVyIjoyNzA5ODcxLCJpYXQiOjE2MTk1MDUxMjl9.b14M2dEFz81Y2ijpOBa97TFTmq6sOIS6FoC8keId4VM",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \r\n    \"user_id\":\"608796c5697a07299447200e\",\r\n    \"detail_id\":\"608797c0466d0833d4ed7137\",\r\n    \"like_status\":true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://pass-it-on123.herokuapp.com/favorite",
+        "description": "favorite"
+      },
+      "response": []
+    },
+    {
+      "name": "CONTACT-API",
+      "id": "5ab763bd-8330-4e24-a266-e12f853aaa90",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDg3OTZjNTY5N2EwNzI5OTQ0NzIwMGUiLCJuYW1lIjoiR2F1cmF2IiwiZW1haWwiOiJnYXVyYXYxMkBnbWFpbC5jb20iLCJjb2xsZWdlIjoiUFRVIiwicm9sbF9udW1iZXIiOjE3MDk4NzcsImlhdCI6MTYxOTQ5ODY5M30.hyW_kcJCmP201Kkv5G0Kd0Z7MF-Uln13xhMVJtT7Y9I",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\":\"gr07511@gmail.com\",\r\n    \"subject\":\"error while selecting image\",\r\n    \"message\":\"error while selecting image\"   \r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://pass-it-on123.herokuapp.com/contact"
+      },
+      "response": []
+    },
+    {
+      "name": "GETTING ALL FAVORITES",
+      "id": "c3b0eaad-8449-41fa-9913-0091bb93cd86",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDg3YWZlOTE5NjMwMjI0YzAxZGNlMTYiLCJuYW1lIjoiY2FwdGFpbl9KYWNrIiwiZW1haWwiOiJqYWNrMTJAZ21haWwuY29tIiwiY29sbGVnZSI6IkxQVSIsInJvbGxfbnVtYmVyIjoyNzA5ODcxLCJpYXQiOjE2MTk1MDUxMjl9.b14M2dEFz81Y2ijpOBa97TFTmq6sOIS6FoC8keId4VM",
+            "type": "text"
+          }
+        ],
+        "url": "https://pass-it-on123.herokuapp.com/get-favorite",
+        "description": "getting favorite lists"
+      },
+      "response": []
+    },
+    {
+      "name": "GET SUB-CATEGORIES",
+      "id": "6e5923ce-0f2a-4613-98ad-5ac73616707f",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGJlZmNjZWU1MmM5MzAwMTU1ODRmZTAiLCJuYW1lIjoiZ2F1cmF2IiwiZW1haWwiOiJnYXVyYXYxMkBnbWFpbC5jb20iLCJpYXQiOjE2MjM2NjI3NTN9.pzQoeOeZgW8JCSul-lgj-srE_pigwkFSuWzuxuorMCk",
+            "type": "text"
+          }
+        ],
+        "url": "https://pass-it-on123.herokuapp.com/get_sub/6093d12d6888b600152f2106",
+        "description": "get_sub"
+      },
+      "response": []
+    },
+    {
+      "name": "GET CATEGORIES",
+      "id": "06a15552-5c1a-4355-8384-fbbfb852b19c",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGJlZmNjZWU1MmM5MzAwMTU1ODRmZTAiLCJuYW1lIjoiZ2F1cmF2IiwiZW1haWwiOiJnYXVyYXYxMkBnbWFpbC5jb20iLCJpYXQiOjE2MjM2NjI3NTN9.pzQoeOeZgW8JCSul-lgj-srE_pigwkFSuWzuxuorMCk",
+            "type": "text"
+          }
+        ],
+        "url": "https://pass-it-on123.herokuapp.com/get-cat"
+      },
+      "response": []
+    },
+    {
+      "name": "VIEW PROFILE-PHOTO",
+      "id": "795deac1-5daa-4798-a373-0c74e863f012",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGJlZmNjZWU1MmM5MzAwMTU1ODRmZTAiLCJuYW1lIjoiR2F1cmF2IiwiZW1haWwiOiJnYXVyYXYxMkBnbWFpbC5jb20iLCJpYXQiOjE2MjMyMzQwNDR9.OAiCaj8bMs12NGe4UhQArLnvjz58aaOnyl31wLhsBuQ",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": []
+        },
+        "url": "https://pass-it-on123.herokuapp.com/view_Profile"
+      },
+      "response": []
+    },
+    {
+      "name": "MY-UPLOADS",
+      "id": "6e5a1e19-87c0-4cb0-84ae-2e9f92f13c75",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDg3OTZjNTY5N2EwNzI5OTQ0NzIwMGUiLCJuYW1lIjoiR2F1cmF2IiwiZW1haWwiOiJnYXVyYXYxMkBnbWFpbC5jb20iLCJpYXQiOjE2MjM2Njg1MDJ9.JV1CClWynifpM8duCbQNC52g-D1uv0p1GlQXNR_5FE8",
+            "type": "text"
+          }
+        ],
+        "url": "https://pass-it-on123.herokuapp.com/get_Myupload_detail"
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE MY-UPLOADS",
+      "id": "40ee4982-fc53-408b-bb81-dfcf514e2b7c",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGJlZmNjZWU1MmM5MzAwMTU1ODRmZTAiLCJuYW1lIjoiR2F1cmF2IiwiZW1haWwiOiJnYXVyYXYxMkBnbWFpbC5jb20iLCJpYXQiOjE2MjMyMzQwNDR9.OAiCaj8bMs12NGe4UhQArLnvjz58aaOnyl31wLhsBuQ",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"details_id\":\"60c0496ccaf4c40015c49c76\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://pass-it-on123.herokuapp.com/del_Myupload-detail"
+      },
+      "response": []
+    },
+    {
+      "name": "EDIT IMAGES IN DETAILS",
+      "id": "defb9e69-98b2-4290-90d2-cc17c81d5666",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGJlZmNjZWU1MmM5MzAwMTU1ODRmZTAiLCJuYW1lIjoiR2F1cmF2IiwiZW1haWwiOiJnYXVyYXYxMkBnbWFpbC5jb20iLCJpYXQiOjE2MjMyMzQwNDR9.OAiCaj8bMs12NGe4UhQArLnvjz58aaOnyl31wLhsBuQ",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "image1",
+              "type": "file",
+              "src": [
+                "/C:/Users/Gaurav/Pictures/arc_design.png",
+                "/C:/Users/Gaurav/Pictures/data.png"
+              ]
+            },
+            {
+              "key": "details_id",
+              "value": "6093d87661cac21ba44b2620",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://pass-it-on123.herokuapp.com/add-Imagedetail1",
+          "protocol": "https",
+          "host": [
+            "pass-it-on123",
+            "herokuapp",
+            "com"
+          ],
+          "path": [
+            "add-Imagedetail1"
+          ],
+          "query": [
+            {
+              "key": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDg3OTZjNTY5N2EwNzI5OTQ0NzIwMGUiLCJuYW1lIjoiZ2F1cmF2IiwiZW1haWwiOiJncjA3NTExQGdtYWlsLmNvbSIsImlhdCI6MTYyMjg5MTcyMX0.URhPygPX-dRO_yrpjW42QCOJyd3X4pRKbIXLgupfdkk",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE IMAGES IN DETAILS",
+      "id": "e824c3c5-52d0-43f2-a20a-f6559b78327e",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDg3OTZjNTY5N2EwNzI5OTQ0NzIwMGUiLCJuYW1lIjoiR2F1cmF2IiwiZW1haWwiOiJnYXVyYXYxMkBnbWFpbC5jb20iLCJpYXQiOjE2MjMyMjcxMzN9.3yi2TTLE9I5rtwmXITEeYAINE2eGtXs5zY_QyWDfuA8",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"details_id\":\"60c1b8ee07a93a0b20865a97\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://pass-it-on123.herokuapp.com/del-Imagedetail1"
+      },
+      "response": []
+    },
+    {
+      "name": "EDIT DETAIL",
+      "id": "35992940-8321-4f50-b707-7b8f9da56924",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDg3OTZjNTY5N2EwNzI5OTQ0NzIwMGUiLCJuYW1lIjoiR2F1cmF2IiwiZW1haWwiOiJnYXVyYXYxMkBnbWFpbC5jb20iLCJpYXQiOjE2MjM2Njg1MDJ9.JV1CClWynifpM8duCbQNC52g-D1uv0p1GlQXNR_5FE8",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"detail_id\":\"60c70d7454951f47a485b1d4\",\r\n    \"title\":\"MY Eng.0.\",\r\n    \"author\":\"salaria Pra\",\r\n    \"edition\":2,\r\n    \"university\":\"Thaper\",\r\n    \"quantity\":1,\r\n    \"description\":\"owgdosghs\",\r\n    \"price\":1000\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://pass-it-on123.herokuapp.com/edit-Imagedetail1"
+      },
+      "response": []
+    }
+  ]
+}

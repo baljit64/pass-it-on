@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.outer-box-discription {
+  box-shadow: 1px 2px 7px #c2c2c2;
+  margin: 8rem auto 1rem;
+  border-radius: 2rem;
+  padding: 3rem;
+}
+
+.img-box {
+
+  max-width: 32rem;
+
+  display: flex;
+  justify-content: center;
+  max-height: 40rem;
+  padding: 3rem 0;
+
+}
+
+.Upload-img-btn-box {
+  max-width: 32rem;
+}
+
+.discription-img {
+  width: 30rem;
+  height: 30rem;
+  position: relative;
+  min-width: 250px;
+
+}
+
+.del-edit-icon {
+  position: absolute;
+  z-index: 9;
+  right: 5%;
+  top: 5%;
+
+}
+
+.del-edit-icon span {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.678);
+  font-size: 20px;
+
+}
+
+.del-edit-icon span:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.del-edit-icon span:nth-child(1):hover {
+  background: #f00;
+  color: #fff;
+}
+
+.btn-upload {
+  background: #153759 !important;
+  color: #fff !important;
+}
+
+.del-edit-icon span:nth-child(2):hover {
+  background: #f00;
+  color: #fff;
+}
+
+.item-name {
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  padding-bottom: 1rem;
+  position: relative;
+  color: #153759;
+}
+
+.item-name::before {
+  content: '';
+  position: absolute;
+  height: .2rem;
+  width: 12rem;
+
+  top: 100%;
+  background: #21DA8F;
+
+}
+
+.discription-headings {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+
+  text-transform: capitalize;
+  min-width: 12rem;
+}
+
+.enter-data {
+  font-size: 1.4rem;
+  padding-top: .5rem;
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.678);
+}
+
+.product-detail {
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+  color: rgba(0, 0, 0, 0.883);
+  text-transform: capitalize;
+}
+
+.msg-btn-box {
+  display: flex;
+  justify-content: left;
+
+}
+
+.send-msg-btn {
+  border: 1px solid #153759;
+  background: #fff;
+  color: #153759;
+  border-radius: .5rem;
+  transition: All .5s ease;
+  padding: 1rem;
+  font-size: 1.8rem;
+  box-shadow: rgba(0, 0, 0, 0.678);
+  width: 50%;
+
+}
+
+.send-msg-btn:hover {
+  background: #153759;
+  color: #fff;
+  border: none;
+}
+
+.dell-btn {
+  border: 1px solid #fd1717;
+  background: #fff;
+  color: #fd1717;
+  border-radius: .5rem;
+  transition: All .5s ease;
+  padding: 1rem;
+  font-size: 1.8rem;
+  box-shadow: rgba(0, 0, 0, 0.678);
+  /* width: 50%; */
+}
+
+.dell-btn:hover {
+  background: #fd1717;
+  color: #fff;
+  border: none;
+}
+
+
+
+/* sell items page */
+
+
+/* .sell-input {} */
+
+.discription-textarea {
+  min-width: 20rem;
+  min-height: 5rem;
+  max-height: 10rem;
+  border: 1px solid rgba(0, 0, 0, 0.637);
+  user-select: none;
+  outline: none;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+/* upload pics */
+.upload-book h2 {
+  color: #000;
+}
+
+#uploadimg {
+  position: relative;
+  border: 1px dashed #000;
+  padding: 3rem;
+  background: rgba(128, 128, 128, 0.198);
+}
+
+.img-box-text em,
+p {
+  font-size: 14px;
+  color: #000;
+}
+
+.msg-text-size {
+  font-size: 14px;
+}
+
+#uploadimg input[type=file] {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+@media only screen and (max-width:991px) {
+  .outer-box-discription {
+    margin: 8rem auto 1rem;
+  }
+
+  .send-msg-btn {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .upload-book input[type=file] {
+    width: 100%;
+    padding: 5rem;
+  }
+
+  .img-box {
+    margin: auto;
+  }
+
+  .send-msg-btn {
+    width: 100% !important;
+  }
+
+  .msg-btn-box {
+    justify-content: center;
+  }
+
+  .discription-content-box {
+    max-width: 100%;
+    margin: 1em auto;
+  }
+
+  .outer-box-discription {
+    margin: 8rem auto 1rem;
+  }
+
+  .upload-content-box {
+    max-width: 100%;
+  }
+}

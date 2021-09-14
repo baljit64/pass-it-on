@@ -1,0 +1,153 @@
+.profile-box {
+  min-height: 400px;
+  padding-top: 30px;
+  margin-top: 6rem;
+}
+
+.profile-pic-circle {
+
+  height: 150px;
+  width: 150px;
+
+  position: relative;
+}
+
+.profile-pic-img {
+  height: 100%;
+}
+
+.info-label {
+  line-height: 3rem;
+  font-size: 1.4rem;
+  padding-left: 1rem;
+  color: rgba(0, 0, 0, 0.726);
+  width: 70px;
+  line-height: 1.7rem;
+
+  border-left: 2px solid #21DA8F;
+  width: 100%;
+
+}
+
+.profile-pic {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 2px solid #c2c2c2;
+  overflow: hidden;
+}
+
+.edit-icon {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -webkit-transform: translateY(-50%);
+
+}
+
+.uploadimg {
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  left: -10px;
+  top: -10px;
+  opacity: 0;
+}
+
+.img-box img {
+  width: 80%;
+  height: 260px;
+  margin: auto;
+  border-radius: 6px;
+}
+
+.edit-img {
+  overflow: hidden;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  bottom: 0;
+  color: #000;
+  z-index: 99;
+  background: #fff;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.534);
+  padding: .5rem;
+  left: 40%;
+  transform: translateY(1.5rem);
+
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -webkit-transform: translateY(1.5rem);
+}
+
+.info-value {
+  line-height: 3rem;
+  font-size: 1.4rem;
+  color: #153759;
+  padding-left: 2rem;
+}
+
+.profile-links {
+  display: flex;
+  flex-direction: row;
+  margin-left: 0;
+}
+
+.profile-links a {
+  padding: 10px;
+  background: #21DA8F;
+  border: 1px solid #fff;
+  margin-bottom: 1rem;
+
+}
+
+
+.upload-profile-pic-btn {
+  position: relative;
+  /* overflow: hidden; */
+
+}
+
+.upload-img-input {
+  opacity: 0;
+
+}
+
+.upload-profile-pic-btn label,
+input[type="file"] {
+  position: absolute;
+}
+
+.profile-pic-box {
+  padding: 4rem 0;
+}
+
+.profile-content {
+  margin: 3rem 0;
+}
+
+.shadow-box {
+  box-shadow: 1px 2px 7px #c2c2c2;
+  border-radius: 1rem;
+}
+
+
+/* Set gray background color and 100% height */
+
+.profile-content {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+@media only screen and (max-width:767px) {
+  .shadow-box {
+    box-shadow: none;
+    /* border-radius: 1rem; */
+  }
+}

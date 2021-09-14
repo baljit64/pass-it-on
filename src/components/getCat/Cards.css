@@ -1,0 +1,156 @@
+.books-outer-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-mt {
+  margin-top: 6rem;
+}
+
+.cards-body {
+  display: grid;
+  width: 100%;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: start;
+  padding-top: 2rem;
+}
+
+.height-400 {
+  height: 400px;
+  position: relative;
+  width: 100% !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  place-items: center;
+}
+
+.success-popup {
+  height: 400px;
+  position: relative;
+  width: 600px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  place-items: center;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 1px 2px 5px #454b5260;
+}
+
+.books-card,
+.notes-card,
+.ppt-card,
+.stationary-card {
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 7px;
+  position: relative;
+  /* margin: 1rem auto; */
+  margin: 1rem 0;
+  overflow: hidden;
+  height: 30rem;
+  border-radius: 10px;
+  max-width: 100%;
+
+}
+
+.books-card:hover img,
+.notes-card:hover img,
+.ppt-card:hover img,
+.stationary-card:hover img {
+  transform: scale(1.2);
+  transition: ease-in-out 0.5s;
+}
+
+
+@media only screen and (min-width:992px) {
+  .cards-body {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (min-width:800px) and (max-width:991px) {
+  .cards-body {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width:501px)and (max-width:800px) {
+  .cards-body {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media only screen and (max-width:500px) {
+  .cards-body {
+    display: block;
+  }
+
+  .books-card:hover img {
+    transform: none;
+  }
+
+  .books-card {
+    display: flex;
+    flex-direction: row;
+    height: 10rem;
+    border-radius: 0;
+
+  }
+
+  .books-card .card-circle {
+    width: 30%;
+    height: 100%;
+
+  }
+
+  .card-img,
+  .card-img img {
+    height: 100%;
+    width: 100%;
+
+  }
+
+  .books-card .featured-card-content .read-more-btn {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+
+    z-index: 4;
+  }
+
+  .books-card .featured-card-content .read-more-btn a {
+    width: 100%;
+    height: 100%;
+  }
+
+  .books-card .featured-card-content {
+    width: 70%;
+    height: 100%;
+    padding: 3px 0 !important;
+    overflow: none !important;
+  }
+
+  .books-card .add-to-cart {
+    z-index: 9;
+    top: 40%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .books-card .remove-to-cart {
+    z-index: 9;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .dell-icon {
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+  }
+}
